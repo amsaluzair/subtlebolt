@@ -1,5 +1,7 @@
 import React from 'react';
+import { BackgroundBeams } from './BackgroundBeams';
 import { Sparkles, Play, CalendarCheck2, X } from 'lucide-react';
+
 
 export const Hero: React.FC = () => {
   return (
@@ -8,7 +10,7 @@ export const Hero: React.FC = () => {
       <div className="absolute inset-0 z-0">
         {/* Top Glow */}
         <div className="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-brand-yellow/5 rounded-[100%] blur-[100px] pointer-events-none"></div>
-        
+
         {/* Volumetric Rays */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           {/* Main Ray */}
@@ -20,11 +22,12 @@ export const Hero: React.FC = () => {
         </div>
 
         {/* Grid Pattern */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none"></div>
+        {/* Grid Pattern and Beams */}
+        <BackgroundBeams />
       </div>
 
       <div className="max-w-4xl mx-auto text-center relative z-10">
-        
+
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-brand-yellow/30 bg-brand-yellow/10 text-brand-yellow text-sm font-semibold tracking-wide uppercase mb-8 backdrop-blur-sm">
           <Sparkles className="w-4 h-4" />
@@ -63,13 +66,13 @@ export const Hero: React.FC = () => {
             <X className="text-red-500 w-5 h-5" /> No templates
           </div>
           <div className="flex items-center gap-2">
-             <X className="text-red-500 w-5 h-5" /> No guesswork
+            <X className="text-red-500 w-5 h-5" /> No guesswork
           </div>
           <div className="flex items-center gap-2">
-             <X className="text-red-500 w-5 h-5" /> No “spray and pray”
+            <X className="text-red-500 w-5 h-5" /> No “spray and pray”
           </div>
         </div>
-        
+
         <p className="text-xl text-white max-w-2xl mx-auto mb-10">
           Just a done-for-you outbound system that fills your pipeline with decision-makers who actually want to talk.
         </p>
