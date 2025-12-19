@@ -1,5 +1,6 @@
 import React from 'react';
 import { Zap, ArrowRight } from 'lucide-react';
+import logo from '../src/assets/sblogo.png';
 
 export const Navbar: React.FC = () => {
   return (
@@ -7,13 +8,11 @@ export const Navbar: React.FC = () => {
       <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-1 group cursor-pointer">
-          <span className="font-display text-3xl tracking-wide text-white uppercase mt-1">Subtle</span>
-          <Zap className="w-8 h-8 text-brand-yellow fill-brand-yellow -rotate-12 group-hover:rotate-0 transition-transform duration-300" />
-          <span className="font-display text-3xl tracking-wide text-white uppercase mt-1">Bolt</span>
+          <img src={logo} alt="Subtle Bolt Logo" className="h-12 w-auto object-contain" />
         </div>
 
-        <a 
-          href="#book" 
+        <a
+          href="#book"
           className="hidden md:flex items-center gap-2 text-lg font-medium text-white hover:text-brand-yellow transition-colors"
         >
           Strategy Call
