@@ -9,12 +9,12 @@ import { Guarantee } from './components/Guarantee';
 import { WhoIsThisFor } from './components/WhoIsThisFor';
 import { CTA } from './components/CTA';
 import { Footer } from './components/Footer';
-import { ParticleBackground } from './components/ParticleBackground';
+
 
 const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-brand-black text-zinc-300 font-body selection:bg-brand-yellow selection:text-brand-black relative">
-      <ParticleBackground />
+
       <Navbar />
       <div className="relative z-10">
         <Hero />
