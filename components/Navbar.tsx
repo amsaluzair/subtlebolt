@@ -1,6 +1,6 @@
 import React from 'react';
 import { Zap, ArrowRight } from 'lucide-react';
-import logo from '../src/assets/sblogo.png';
+import logo from '../src/assets/sblogo2.png';
 
 export const Navbar: React.FC = () => {
   return (
